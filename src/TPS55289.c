@@ -100,16 +100,16 @@ static int setRegister(uint8_t registerAddress, const uint8_t data) {
     buffer[0] = registerAddress;
     buffer[1] = data;
 
-    return i2c_write_blocking(i2c0, TPS55289_I2C_ADDR, &buffer[0], 2, false);
+    return i2c_write_blocking(i2c1, TPS55289_I2C_ADDR, &buffer[0], 2, false);
 }
 /*
     Get Register Function
 */
 static int getRegister(uint8_t registerAddress, uint8_t data) {
-    if (i2c_write_blocking(i2c0, TPS55289_I2C_ADDR, &registerAddress, 1, false) != 1) {
+    if (i2c_write_blocking(i2c1, TPS55289_I2C_ADDR, &registerAddress, 1, false) != 1) {
         return false; // Error writing register address
     }
-    return i2c_read_blocking(i2c0, TPS55289_I2C_ADDR, &data, 1, false);
+    return i2c_read_blocking(i2c1, TPS55289_I2C_ADDR, &data, 1, false);
 }
 
 _Bool setOutputVoltage(TPS55289 *device, float voltage){
