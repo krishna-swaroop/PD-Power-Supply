@@ -1,3 +1,0 @@
-/home/swaroop/pico/USBPD_Power_Supply/build/pioasm/CMakeFiles/pioasm.dir
-/home/swaroop/pico/USBPD_Power_Supply/build/pioasm/CMakeFiles/edit_cache.dir
-/home/swaroop/pico/USBPD_Power_Supply/build/pioasm/CMakeFiles/rebuild_cache.dir
