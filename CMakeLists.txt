@@ -38,6 +38,6 @@ target_link_libraries(USBPD_Power_Supply
 pico_add_extra_outputs(USBPD_Power_Supply)
 
 pico_enable_stdio_usb(USBPD_Power_Supply 1)
-pico_enable_stdio_uart(USBPD_Power_Supply 1)
+pico_enable_stdio_uart(USBPD_Power_Supply 0)
 
 
